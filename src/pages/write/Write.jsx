@@ -3,6 +3,9 @@ import "./write.css"
 export default function Write() {
   return (
     <div className="write">
+        <img className="writeImg"
+        src="https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg?w=2000" 
+        alt="" />
       <form className="writeForm">
         <div className="writeFormGroup">
             <label htmlFor="fileInput">

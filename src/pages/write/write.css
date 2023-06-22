@@ -1,10 +1,20 @@
 .write{
     padding: 50px;
 }
+
+.writeImg{
+    margin-left: 150px;
+    width: 70vw;
+    height: 250px;
+    border-radius:10px;
+    object-fit: cover;
+
+}
 .writeForm{
     position: relative;
 
 }
+
 
 .writeFormGroup{
 margin-left: 150px;
@@ -38,7 +48,7 @@ align-items: center;
 
 .writeText{
     font-size: 20px;
-
+    height: 100vh;
 }
 
 .writePublish{
