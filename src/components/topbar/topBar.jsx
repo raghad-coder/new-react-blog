@@ -1,6 +1,8 @@
 import "./topbar.css";
+import {Link} from "react-router-dom"
 
 const TopBar = () => {
+   const user = true ;
     return (
         <div className="top">
             <div className="topLeft">
@@ -12,19 +14,28 @@ const TopBar = () => {
 
             <div className="topCenter">
                 <ul className="topList">
-                    <li className="topListItem">HOME</li>
-                    <li className="topListItem">ABOUT</li>
-                    <li className="topListItem">CONTACT</li>
-                    <li className="topListItem">WRITE </li>
-                    <li className="topListItem">LOGOUT</li>
+                    <li className="topListItem"> <Link className="link" to="/"> HOME </Link></li>
+                    <li className="topListItem"><Link className="link" to="/"> ABOUT </Link> </li>
+                    <li className="topListItem"><Link className="link" to="/"> CONTACT </Link></li>
+                    <li className="topListItem"><Link className="link" to="/write"> WRITE </Link> </li>
+                    <li className="topListItem"><Link className="link" to="/"> {user && "LOGOUT"} </Link></li>
 
 
 
                 </ul>
             </div>
             <div className="topRight">
+                {
+                    user ? (<img  className="topImg"src="https://damassets.autodesk.net/content/dam/autodesk/www/industry/3d-animation/create-beautiful-3d-animations-thumb-1204x677.jpg"
+                    alt=""/>) : ( 
+                    <>
+                    <Link className="link" to="/login"> Login </Link>
+                    <Link className="link" to="/register"> Register </Link>
+                    </> 
+                    )
+                }
               
-            <img  className="topImg"src="https://damassets.autodesk.net/content/dam/autodesk/www/industry/3d-animation/create-beautiful-3d-animations-thumb-1204x677.jpg" alt=""/>
+            
                 <i className="topSearchIcon fa-solid fa-magnifying-glass"></i>
             </div>
         </div>

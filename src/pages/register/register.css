@@ -1,0 +1,60 @@
+.register{
+    height: calc(100vh - 50px);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(
+        rgba(225,225,0,0),
+        rgba(225,225,0,0)
+    )
+    ,url("https://img.freepik.com/free-vector/hand-drawn-abstract-shapes-wallpaper_23-2149090565.jpg?w=2000");
+    background-size: cover;
+}
+.registerTitle{
+    font-size: 50px;
+    font-family: 'Lora', serif;
+}
+
+.registerForm{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.registerForm > label{
+    margin: 10px 0;
+}
+
+.registerInput{
+    padding: 10px;
+    background-color: #ffffb7;
+    border: none;
+}
+
+.registerBtn{
+    cursor: pointer;
+    margin-top: 20px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    background-color: #800040;
+    border-radius:10px;
+    padding: 10px;
+}
+
+.registerLoginBtn{
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    background-color: #008000;
+    border-radius:10px;
+    padding: 10px;
+}
